@@ -79,6 +79,12 @@ return packer.startup(function(use)
     -- Comments
     use "numToStr/Comment.nvim"
 
+    -- Gitsignes
+    use "lewis6991/gitsigns.nvim"
+
+    -- bbye (keep window open when file closed)
+    use "moll/vim-bbye"
+
     if PACKER_BOOTSTRAP then
         require("packer").sync()
     end
