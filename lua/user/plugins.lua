@@ -85,6 +85,21 @@ return packer.startup(function(use)
     -- bbye (keep window open when file closed)
     use "moll/vim-bbye"
 
+    -- rust
+    use 'simrat39/rust-tools.nvim'
+
+    -- LSP
+    use 'neovim/nvim-lspconfig'
+    use "williamboman/mason.nvim"
+
+    -- cmp
+	use "hrsh7th/nvim-cmp" -- The completion plugin
+	use "hrsh7th/cmp-buffer" -- buffer completions
+	use "hrsh7th/cmp-path"  -- path completions
+	use "hrsh7th/cmp-nvim-lsp" -- lsp completions
+    use "saadparwaiz1/cmp_luasnip" -- snippet completions
+    use "L3MON4D3/LuaSnip" -- snippet engine
+
     if PACKER_BOOTSTRAP then
         require("packer").sync()
     end

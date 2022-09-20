@@ -40,8 +40,8 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts) -- previous buffer
 keymap("n", "<leader>qq", "<cmd>Bdelete<cr>", opts) -- close buffer but don't remove window
 
 -- Move text up and down
-keymap("n", "<A-k>", "<Esc>:m .-2<CR>==", opts) -- move line down
-keymap("n", "<A-j>", "<Esc>:m .+1<CR>==", opts) -- move line up
+keymap("n", "<A-k>", "<Esc>:m .-2<CR>==", opts) -- move line up 
+keymap("n", "<A-j>", "<Esc>:m .+1<CR>==", opts) -- move line down 
 
 -- TERMINAL --
 keymap("t", "<c-\\>", "<cmd>ToggleTerm<cr>", opts) -- close terminal window
